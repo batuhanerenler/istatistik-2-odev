@@ -32,7 +32,7 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
-[^1]: 19080213, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+[^1]: 19080213, [Github Repo](https://github.com/batuhanerenler/istatistik-2-odev)
 
 # Vize Hakkında Önemli Bilgiler
 
@@ -80,7 +80,6 @@ Proje kapsamında, deprem hasarlarını ve kayıplarını tahmin etmek için ver
 3. Model geliştirme: Hasar ve kayıp tahminleri yapmak için farklı makine öğrenimi algoritmaları (örn. doğrusal regresyon, yapay sinir ağları, rastgele orman) kullanarak modeller geliştirmek.
 4. Model değerlendirme: Geliştirilen modellerin performanslarını kıyaslamak ve en iyi modeli seçmek.
 5. Sonuçlar ve yorumlar: Analiz ve tahmin sonuçlarını raporlamak ve yorumlamak. Türkiye'deki diğer şehirler için benzer tahminler yapılabilir ve afet yönetimi ve müdahale stratejilerinin planlanmasında kullanılabilir.
-
 
 
 \newpage
