@@ -1,0 +1,201 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{polyglossia}
+\setmainlanguage{turkish}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Deprem Hasar ve Kayıp Tahmini},
+  pdfauthor={Batuhan Erenler},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Deprem Hasar ve Kayıp Tahmini}
+\author{Batuhan Erenler\footnote{19080213, \href{https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ}{Github Repo}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{vize-hakkux131nda-uxf6nemli-bilgiler}{%
+\section{Vize Hakkında Önemli Bilgiler}\label{vize-hakkux131nda-uxf6nemli-bilgiler}}
+
+\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 35. SATIRINA YAZINIZ!}
+
+\textbf{Proje önerisi gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.}
+
+\textbf{Proje klasörünüzü sıkıştırdıktan sonra (\texttt{YourStudentID.zip} dosyası) 16 Nisan 2023 23:59'a kadar \emph{ekampus.ankara.edu.tr} adresine yüklemeniz gerekmektedir.}
+
+\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
+
+\hypertarget{giriux15f}{%
+\section{Giriş}\label{giriux15f}}
+
+Depremler, dünya genelinde önemli bir doğal afet olarak kabul edilir ve büyük hasarlara ve can kayıplarına neden olabilir. Bu proje kapsamında, önceden belirlenmiş bir deprem senaryosuna göre yapılan analizlerin sonuçlarını içeren bir veri seti kullanarak, deprem hasarlarını ve kayıplarını tahmin etmeyi amaçlamaktayım.
+
+\hypertarget{uxe7alux131ux15fmanux131n-amacux131}{%
+\subsection{Çalışmanın Amacı}\label{uxe7alux131ux15fmanux131n-amacux131}}
+
+Veri seti, 7.5 Mw büyüklüğünde gece meydana gelecek bir deprem senaryosuna göre hazırlanmış analiz sonuçlarını içermektedir. Veri setinde, depremden etkilenecek ilçelerin ve mahallelerin isimleri, hasar görecek bina sayıları, can kaybı sayısı, yaralı sayısı, altyapı hasarları ve geçici barınma ihtiyacı gibi bilgiler bulunmaktadır. Bu veri seti, deprem hasar ve kayıplarını tahmin etmek ve böylece afet yönetimi ve müdahale stratejilerini planlamak için kullanılabilir.
+
+\hypertarget{literatuxfcr}{%
+\subsection{Literatür}\label{literatuxfcr}}
+
+Deprem hasar ve kayıp tahminleri, literatürde birçok çalışmaya konu olmuştur. Bu projede, deprem hasar ve kayıp tahminleri ile ilgili yapılan çalışmalardan dört tanesini inceleyerek, kendi analizimi ve modelimi oluşturmayı planlıyorum.
+
+\begin{itemize}
+\tightlist
+\item
+  Coburn, A. W., \& Spence, R. J. (2002). Earthquake protection. John Wiley \& Sons.
+\end{itemize}
+
+Bu kitapta, deprem koruması ve deprem hasar tahminleri ile ilgili geniş bilgiler sunulmaktadır. Kitapta, deprem hasarının belirlenmesinde kullanılan yöntemler ve hasar tahminleri için kullanılan modeller hakkında bilgi verilmektedir.
+
+\begin{itemize}
+\tightlist
+\item
+  Yücemen, M. S., \& Güçlü, U. (2008). Seismic risk assessment and loss estimation for the city of Istanbul. Earthquake Engineering \& Structural Dynamics, 37(6), 831-854.
+\end{itemize}
+
+Bu çalışmada, İstanbul şehri için sismik risk değerlendirmesi ve hasar tahminleri yapılmıştır. Yazarlar, deprem hasar ve kayıp tahminlerini yapmak için farklı veri kaynakları ve modeller kullanarak bir yöntem sunmaktadır.
+
+\begin{itemize}
+\tightlist
+\item
+  Jaiswal, K., \& Wald, D. (2008). Developing empirical collapse fragility functions for global building types. Earthquake Spectra, 24(3), 731-739.
+\end{itemize}
+
+Bu makalede, küresel bina türleri için deneysel çökme kırılganlık işlevleri geliştirilmektedir. Bu çalışma, depremden etkilenecek binaların hasar durumunu tahmin etmek için kullanılabilecek yöntemler sunmaktadır.
+
+\begin{itemize}
+\tightlist
+\item
+  Porter, K. A., Jaiswal, K., Wald, D. J., Greene, M., \& Comartin, C. (2008). WHE-PAGER project: A new initiative in estimating global building inventory and its seismic vulnerability. 14th World Conference on Earthquake Engineering.
+\end{itemize}
+
+Bu çalışmada, küresel bina envanterinin ve sismik kırılganlığının tahmin edilmesi için yeni bir girişim olan WHE-PAGER projesi tanıtılmaktadır. Bu proje, deprem hasar ve kayıp tahminlerini yapmak için kullanılabilecek bina envanteri ve kırılganlık verileri sağlamaktadır.
+
+Proje kapsamında, deprem hasarlarını ve kayıplarını tahmin etmek için veri setini kullanarak analizler yapmayı amaçlıyorum. Veri analizi süreci şu adımları içerecektir:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Veri ön işleme: Veri setindeki eksik değerlerin doldurulması, veri temizliği ve dönüşüm işlemleri.
+\item
+  Keşifsel veri analizi: Veri setindeki değişkenlerin dağılımlarını, korelasyonlarını ve deprem hasar ve kayıpları üzerindeki etkilerini incelemek.
+\item
+  Model geliştirme: Hasar ve kayıp tahminleri yapmak için farklı makine öğrenimi algoritmaları (örn. doğrusal regresyon, yapay sinir ağları, rastgele orman) kullanarak modeller geliştirmek.
+\item
+  Model değerlendirme: Geliştirilen modellerin performanslarını kıyaslamak ve en iyi modeli seçmek.
+\item
+  Sonuçlar ve yorumlar: Analiz ve tahmin sonuçlarını raporlamak ve yorumlamak. Türkiye'deki diğer şehirler için benzer tahminler yapılabilir ve afet yönetimi ve müdahale stratejilerinin planlanmasında kullanılabilir.
+\end{enumerate}
+
+\newpage
+
+\hypertarget{references}{%
+\section{Kaynakça}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+\end{document}

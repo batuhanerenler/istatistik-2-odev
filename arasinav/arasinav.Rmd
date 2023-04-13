@@ -1,0 +1,89 @@
+---
+title: "Deprem Hasar ve Kayıp Tahmini"
+author: 
+  - Batuhan Erenler[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 19080213, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+
+# Vize Hakkında Önemli Bilgiler
+
+\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 35. SATIRINA YAZINIZ!}
+
+**Proje önerisi gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
+
+**Proje klasörünüzü sıkıştırdıktan sonra (`YourStudentID.zip` dosyası) 16 Nisan 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
+
+\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
+
+# Giriş
+
+Depremler, dünya genelinde önemli bir doğal afet olarak kabul edilir ve büyük hasarlara ve can kayıplarına neden olabilir. Bu proje kapsamında, önceden belirlenmiş bir deprem senaryosuna göre yapılan analizlerin sonuçlarını içeren bir veri seti kullanarak, deprem hasarlarını ve kayıplarını tahmin etmeyi amaçlamaktayım.
+
+
+## Çalışmanın Amacı
+
+Veri seti, 7.5 Mw büyüklüğünde gece meydana gelecek bir deprem senaryosuna göre hazırlanmış analiz sonuçlarını içermektedir. Veri setinde, depremden etkilenecek ilçelerin ve mahallelerin isimleri, hasar görecek bina sayıları, can kaybı sayısı, yaralı sayısı, altyapı hasarları ve geçici barınma ihtiyacı gibi bilgiler bulunmaktadır. Bu veri seti, deprem hasar ve kayıplarını tahmin etmek ve böylece afet yönetimi ve müdahale stratejilerini planlamak için kullanılabilir.
+
+## Literatür 
+
+Deprem hasar ve kayıp tahminleri, literatürde birçok çalışmaya konu olmuştur. Bu projede, deprem hasar ve kayıp tahminleri ile ilgili yapılan çalışmalardan dört tanesini inceleyerek, kendi analizimi ve modelimi oluşturmayı planlıyorum.
+
+- Coburn, A. W., & Spence, R. J. (2002). Earthquake protection. John Wiley & Sons.
+
+Bu kitapta, deprem koruması ve deprem hasar tahminleri ile ilgili geniş bilgiler sunulmaktadır. Kitapta, deprem hasarının belirlenmesinde kullanılan yöntemler ve hasar tahminleri için kullanılan modeller hakkında bilgi verilmektedir.
+
+- Yücemen, M. S., & Güçlü, U. (2008). Seismic risk assessment and loss estimation for the city of Istanbul. Earthquake Engineering & Structural Dynamics, 37(6), 831-854.
+
+Bu çalışmada, İstanbul şehri için sismik risk değerlendirmesi ve hasar tahminleri yapılmıştır. Yazarlar, deprem hasar ve kayıp tahminlerini yapmak için farklı veri kaynakları ve modeller kullanarak bir yöntem sunmaktadır.
+
+- Jaiswal, K., & Wald, D. (2008). Developing empirical collapse fragility functions for global building types. Earthquake Spectra, 24(3), 731-739.
+
+Bu makalede, küresel bina türleri için deneysel çökme kırılganlık işlevleri geliştirilmektedir. Bu çalışma, depremden etkilenecek binaların hasar durumunu tahmin etmek için kullanılabilecek yöntemler sunmaktadır.
+
+- Porter, K. A., Jaiswal, K., Wald, D. J., Greene, M., & Comartin, C. (2008). WHE-PAGER project: A new initiative in estimating global building inventory and its seismic vulnerability. 14th World Conference on Earthquake Engineering.
+
+Bu çalışmada, küresel bina envanterinin ve sismik kırılganlığının tahmin edilmesi için yeni bir girişim olan WHE-PAGER projesi tanıtılmaktadır. Bu proje, deprem hasar ve kayıp tahminlerini yapmak için kullanılabilecek bina envanteri ve kırılganlık verileri sağlamaktadır.
+
+Proje kapsamında, deprem hasarlarını ve kayıplarını tahmin etmek için veri setini kullanarak analizler yapmayı amaçlıyorum. Veri analizi süreci şu adımları içerecektir:
+
+1. Veri ön işleme: Veri setindeki eksik değerlerin doldurulması, veri temizliği ve dönüşüm işlemleri.
+2. Keşifsel veri analizi: Veri setindeki değişkenlerin dağılımlarını, korelasyonlarını ve deprem hasar ve kayıpları üzerindeki etkilerini incelemek.
+3. Model geliştirme: Hasar ve kayıp tahminleri yapmak için farklı makine öğrenimi algoritmaları (örn. doğrusal regresyon, yapay sinir ağları, rastgele orman) kullanarak modeller geliştirmek.
+4. Model değerlendirme: Geliştirilen modellerin performanslarını kıyaslamak ve en iyi modeli seçmek.
+5. Sonuçlar ve yorumlar: Analiz ve tahmin sonuçlarını raporlamak ve yorumlamak. Türkiye'deki diğer şehirler için benzer tahminler yapılabilir ve afet yönetimi ve müdahale stratejilerinin planlanmasında kullanılabilir.
+
+
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+
