@@ -12,6 +12,7 @@ header-includes:
   - \captionsetup[table]{skip=10pt}
 output:
   bookdown::pdf_document2:
+    citation_package: natbib
     fig_caption: yes
     fig_height: 3
     fig_width: 4
@@ -57,19 +58,19 @@ Veri seti, 7.5 Mw büyüklüğünde gece meydana gelecek bir deprem senaryosuna 
 
 Deprem hasar ve kayıp tahminleri, literatürde birçok çalışmaya konu olmuştur. Bu projede, deprem hasar ve kayıp tahminleri ile ilgili yapılan çalışmalardan dört tanesini inceleyerek, kendi analizimi ve modelimi oluşturmayı planlıyorum.
 
-- Coburn, A. W., & Spence, R. J. (2002). Earthquake protection. John Wiley & Sons.
+- Coburn, A. W., & Spence, R. J. (2002). Earthquake protection. John Wiley & Sons. [@coburn2002earthquake]
 
 Bu kitapta, deprem koruması ve deprem hasar tahminleri ile ilgili geniş bilgiler sunulmaktadır. Kitapta, deprem hasarının belirlenmesinde kullanılan yöntemler ve hasar tahminleri için kullanılan modeller hakkında bilgi verilmektedir.
 
-- Yücemen, M. S., & Güçlü, U. (2008). Seismic risk assessment and loss estimation for the city of Istanbul. Earthquake Engineering & Structural Dynamics, 37(6), 831-854.
+- Yücemen, M. S., & Güçlü, U. (2008). Seismic risk assessment and loss estimation for the city of Istanbul. Earthquake Engineering & Structural Dynamics, 37(6), 831-854. [@yucemen2008seismic]
 
 Bu çalışmada, İstanbul şehri için sismik risk değerlendirmesi ve hasar tahminleri yapılmıştır. Yazarlar, deprem hasar ve kayıp tahminlerini yapmak için farklı veri kaynakları ve modeller kullanarak bir yöntem sunmaktadır.
 
-- Jaiswal, K., & Wald, D. (2008). Developing empirical collapse fragility functions for global building types. Earthquake Spectra, 24(3), 731-739.
+- Jaiswal, K., & Wald, D. (2008). Developing empirical collapse fragility functions for global building types. Earthquake Spectra, 24(3), 731-739. [@jaiswal2008developing]
 
 Bu makalede, küresel bina türleri için deneysel çökme kırılganlık işlevleri geliştirilmektedir. Bu çalışma, depremden etkilenecek binaların hasar durumunu tahmin etmek için kullanılabilecek yöntemler sunmaktadır.
 
-- Porter, K. A., Jaiswal, K., Wald, D. J., Greene, M., & Comartin, C. (2008). WHE-PAGER project: A new initiative in estimating global building inventory and its seismic vulnerability. 14th World Conference on Earthquake Engineering.
+- Porter, K. A., Jaiswal, K., Wald, D. J., Greene, M., & Comartin, C. (2008). WHE-PAGER project: A new initiative in estimating global building inventory and its seismic vulnerability. 14th World Conference on Earthquake Engineering. [@porter2008whe]
 
 Bu çalışmada, küresel bina envanterinin ve sismik kırılganlığının tahmin edilmesi için yeni bir girişim olan WHE-PAGER projesi tanıtılmaktadır. Bu proje, deprem hasar ve kayıp tahminlerini yapmak için kullanılabilecek bina envanteri ve kırılganlık verileri sağlamaktadır.
 
@@ -81,8 +82,6 @@ Proje kapsamında, deprem hasarlarını ve kayıplarını tahmin etmek için ver
 4. Model değerlendirme: Geliştirilen modellerin performanslarını kıyaslamak ve en iyi modeli seçmek.
 5. Sonuçlar ve yorumlar: Analiz ve tahmin sonuçlarını raporlamak ve yorumlamak. Türkiye'deki diğer şehirler için benzer tahminler yapılabilir ve afet yönetimi ve müdahale stratejilerinin planlanmasında kullanılabilir.
 
-
 \newpage
 # Kaynakça {#references}
 <div id="refs"></div>
-
